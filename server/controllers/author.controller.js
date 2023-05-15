@@ -23,7 +23,7 @@ module.exports.getOne = (req, res) =>{
 
 //update by id
 module.exports.updateAuthor = (req, res) =>{
-    Authors.findByIdAndUpdate({_id: req.params.id}, req.body,{ runValidators: true })
+    Authors.findByIdAndUpdate({_id: req.params.id}, req.body, {new:true, runValidators: true })
     .then(updateAuthor => {res.json({results: updateAuthor})})
     .catch(err => res.status(400).json(err))
 }
