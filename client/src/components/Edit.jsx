@@ -42,6 +42,7 @@ const Edit = () => {
 
     return (
         <div>
+            <Link to={'/'} className='btn btn-primary me-4'>Home</Link>
             <h5 className='text-success'>Edit this author:</h5>
             {
                 errors.map((err, i) => {
