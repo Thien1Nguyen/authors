@@ -19,7 +19,7 @@ const Read = () => {
     })
     return (
         <div>
-            <Link to={"/create"} className='btn btn-primary me-4'>Add an author</Link>
+            <Link to={"/create"} className='btn btn-primary mb-4'>Add an author</Link>
             <table className='table bg-dark text-white'>
                 <thead>
                     <tr>

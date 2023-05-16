@@ -18,6 +18,7 @@ const Edit = () => {
         })
         .catch((err) => {
             console.log("Them Errors: ", err)
+            navigate("/error")
         })
     },[])
 
